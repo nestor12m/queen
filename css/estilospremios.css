@@ -1,29 +1,28 @@
-
-
 :root{
+    --colorbnts:rgb(18, 19, 18);
     --colorfooter:rgb(10, 11, 14);
-    --colorbotns:rgb(3, 3, 10);
-    --hoverbnts:rgb(0, 60, 255);
+    --colortarjetaspremios:#ccc;
+    --btnshover:blue;
     --colocabecero:rgb(3, 3, 63);
 }
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    list-style: none;
-    text-decoration: none;
-   }
-   
-   *body{
-     background-color: aquamarine;
-   }
 
-   .contenedor{
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+
+
+.contenedor{
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
+}
 
-   }
 
 
 
@@ -58,7 +57,7 @@
 .nav-menu a{
     
     padding: 12px 18px;
-    background-color: var(--colorbotns);
+    background-color: var(--colorbnts);
     border-radius: 10px;
     color:white;
     cursor: pointer;
@@ -69,81 +68,89 @@
     background-color: var(--btnshover);
 }
 
+/* -------------------------------------------------------------------------------------------------------
+                                     seccion1 
+    ---------------------------------------------------------------------------------------------------------------*/
+
+
+h1{
+    text-align: center;
+    color: red;
+    padding: 20px ;
+    font-size: 42px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+ .header1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tarjeta{
+    width: 300px;
+    height: 390px;
+    background-color: var(--colortarjetaspremios);
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    margin-bottom: 40px;
+    gap: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+
+}
+
+.item3 img{
+    width: 160px;
+    height: 170px;
+    padding-bottom: 20px;
+}
+
+.item2 p{
+    padding: 0 10px;
+}
+
+
 
 
 /* -------------------------------------------------------------------------------------------------------
-                                       seccion 1
-    ---------------------------------------------------------------------------------------------------------------*/
-   .cont1{
-    text-align: center;
-   }
-   .cont1 h1{
-    margin-top: 40px;
-    font-size: 30px;
-    font-size: 42px;
-    
-   }
-
-   .contenedor-album{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin-top:30px ;
-   }
-   .contenedor-img{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-   }
-   .contenedor-img img{
-    width: 300px;
-    height: 320px;
-    border-radius: 10px;
-    margin-bottom: 10px;
-    border:3px solid black
-
-   }
-   .contenedor-img  a{
-     margin-bottom: 30px;
-   }
-
-   /* -------------------------------------------------------------------------------------------------------
                                         footer
     ---------------------------------------------------------------------------------------------------------------*/
 
-.footer{
-    margin-top: 30px;
-    height: 190px;
-    background-color: var(--colorfooter);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+    .footer{
+        margin-top: 30px;
+        height: 190px;
+        background-color: var(--colorfooter);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        
+    }
+    .cont1{
+        text-align: center;
+    }
+    .cont1 h4{
+     color: white;
+    }
+    .cont1 p{
+        color:white;
+        padding: 10px 20px;
+    }
+    .cont-redes img{
+      width: 40px;
+      height: 40px;
+    }
     
-}
-.cont1{
-    text-align: center;
-}
-.cont1 h4{
- color: white;
-}
-.cont1 p{
-    color:white;
-    padding: 10px 20px;
-}
-.cont-redes img{
-  width: 40px;
-  height: 40px;
-}
+
+    
 
 
+@media(min-width:500px){
 
-   @media(min-width:500px){
 
 
     .cabecero{
@@ -159,10 +166,25 @@
     .nav-menu{
         flex-direction: row;
         }
-        
-    .contenedor-album{
+   
+    .tarjeta{
+        height: 220px;
+        display: flex;
         flex-direction: row;
-        gap:20px;
+        justify-content:space-evenly;
+        align-items: center;
+        width: 600px;
+        padding:  30px;
+       
+    
     }
-
-   }
+    .tarjeta:nth-child(3) {
+        background-color: aliceblue;
+    }
+    
+    .item3 img{
+        width: 160px;
+        height: 170px;
+    }
+    
+}

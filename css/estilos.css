@@ -5,6 +5,7 @@
     --colorfooter:rgb(10, 11, 14);
     --colortarjetas: rgba(15, 109, 57, 0.534);
     --colorhoverbtnsintegrantes: rgb(146, 146, 146);
+    --colocabecero:rgb(3, 3, 63);
 }
 
 *{
@@ -27,7 +28,56 @@
     /* background-color: bisque; */
 
 }
-.header{
+
+
+
+
+/* ---------------------------------------------------------------------------
+                                    cabecero
+---------------------------------------------------------------------------- */
+.cabecero{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 180px;
+    background-color: var(--colocabecero);
+}
+.nav-logo img{
+
+    width: 150px;
+    height: 100px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.nav-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.nav-menu a{
+    
+    padding: 12px 18px;
+    background-color: var(--colorbotns);
+    border-radius: 10px;
+    color:white;
+    cursor: pointer;
+    
+   }
+
+.nav-menu a:hover{
+    background-color: var(--btnshover);
+}
+
+
+
+.header1{
+    /* border: 2px solid rgb(223, 16, 16); */
     height: 100vh;
     background-image: linear-gradient(120deg, rgba(19, 17, 20, 0.5) 0%, rgba(11, 60, 151, 0.5) 100%),url(../img/portada2.jpg);
     background-repeat: no-repeat;
@@ -38,72 +88,27 @@
 
 
 }
-.nav-logo img{
-    margin-top: 20px;
-    width: 150px;
-    height: 90px;
 
+.header1 h1{
+    font-size: 66px;
 }
 
-.nav-menu a{
-    
- padding: 12px 18px;
- background-color: var(--colorbotns);
- border-radius: 10px;
- color:white;
- cursor: pointer;
- 
-}
-
-.nav-menu li{
-    margin-bottom: 10px;
-}
-.nav-menu a:hover{
-    background-color: var(--hoverbnts);
-}
-
-.cabecero{
-    padding-top: 60px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    height: 40%;
-    /* background-color: red; */
-    height: 150px;
-    
-
-}
-.nav-menu{
-    
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    align-items: center;
-    gap: 20px;
-    height: 150px;
-    margin-top: 20px;
-   
-}
 
 .hero-container{
     display: flex;
     flex-direction: column;
-    height: 80%;
     justify-content: center;
     align-items: center;
     color:white;
     text-align: center;
     padding: 0 40px;
 }
-.hero-title{
-    font-size: 88px;
-    
-    
-}
+
 .nav-logo h2{
     margin-bottom: 20px;
 }
+
+
 
 
 
@@ -166,13 +171,13 @@
 
     border-radius: 10px;
     border:solid 2px black;
-    width: 240px;
+    width: 270px;
     height: 360px;
     display: flex;
     flex-direction: column;
     justify-content:space-evenly;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 34px;
     box-shadow:  0 0 5px 5px;
     background-color:var(--colortarjetas);
 }
@@ -240,24 +245,26 @@
 
 @media(min-width:700px){
 
-
     .cabecero{
-        padding-top: 80px;
+   
         display: flex;
+        justify-content: space-around;
+        align-items: center;
         flex-direction: row;
-        /* background-color: aqua; */
         height: 100px;
+        
     }
+
     .nav-menu{
         flex-direction: row;
-    }
-    .nav-logo img{
-        margin-top:50px;
-        width: 180px;
-        height: 90px;
-        border-radius: 10px;
-    
-    }
+        }
+
+.header1{
+    height: 90vh;
+}
+
+
+
 
     /* -------------------------------------------------------------------------------------------------------
                                         seccion-2
